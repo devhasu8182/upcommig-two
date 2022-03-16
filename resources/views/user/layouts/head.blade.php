@@ -28,6 +28,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('backend_user/assets/css/style.css')}}">
     <link id="color" rel="stylesheet" media="screen" href="{{asset('backend_user/assets/css/color-1.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('backend_user/assets/css/responsive.css')}}">
-
+    <link href="{{asset('backend_user/assets/css/snackbar.min.css')}}" rel="stylesheet">
     @stack('styles')
 </head>

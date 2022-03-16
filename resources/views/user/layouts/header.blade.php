@@ -2,7 +2,7 @@
     <div class="header-wrapper row m-0">
         <div class="header-logo-wrapper col-auto p-0">
             <div class="logo-wrapper">
-                <a href="index.html"><img class="img-fluid" src="{{asset('backend_user/assets/images/logo.png')}}" alt=""></a>
+                <a href="{{route('user')}}"><img class="img-fluid" src="{{asset('backend_user/assets/images/logo.png')}}" alt=""></a>
             </div>
             <div class="toggle-sidebar">
                 <div class="status_toggle sidebar-toggle d-flex">

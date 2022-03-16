@@ -1,14 +1,18 @@
 @if(session('success'))
-    <div class="alert alert-success alert-dismissable fade show">
-        <button class="close" data-dismiss="alert" aria-label="Close">×</button>
-        {{session('success')}}
-    </div>
+    @push('scripts')
+        <script>
+            let elVal = document.getElementById("statusIdSuccess").innerText;
+            Snackbar.show({text: elVal,pos: 'top-center', showAction:false, backgroundColor: '#c3e6cb', textColor: '#155724'});
+        </script>
+    @endpush
 @endif
-
-
 @if(session('error'))
-    <div class="alert alert-danger alert-dismissable fade show">
-        <button class="close" data-dismiss="alert" aria-label="Close">×</button>
-        {{session('error')}}
-    </div>
+    @push('scripts')
+        <script>
+            let elVal = document.getElementById("statusIdFailed").innerText;
+            Snackbar.show({text: elVal, pos: 'top-center', showAction:false, backgroundColor: '#f8d7da', textColor: '#721c24'});
+        </script>
+    @endpush
 @endif
+<h1 id="statusIdSuccess" style="display: none;">{{session('success')}}</h1>
+<h1 id="statusIdFailed" style="display: none;">{{session('error')}}</h1>

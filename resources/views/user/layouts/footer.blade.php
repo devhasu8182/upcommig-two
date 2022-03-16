@@ -11,5 +11,6 @@
 <script src="{{asset('backend_user/assets/js/ecommerce.js')}}"></script>
 <script src="{{asset('backend_user/assets/js/product-list-custom.js')}}"></script>
 <script src="{{asset('backend_user/assets/js/script.js')}}"></script>
+<script src="{{asset('backend_user/assets/js/snackbar.min.js ')}}"></script>
 
 @stack('scripts')

@@ -4,6 +4,7 @@
 @include('user.layouts.head')
 
 <body>
+@include('user.layouts.notification')
 <div class="tap-top"><i data-feather="chevrons-up"></i></div>
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
     @include('user.layouts.header')
